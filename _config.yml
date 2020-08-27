@@ -25,11 +25,14 @@ readme_index:
 
 sass:
   style: compressed
+  load_paths:
+    - node_modules
 
 plugins:
   - jemoji
   - jekyll-avatar
   - jekyll-mentions
+  - jekyll-octicons
 
 exclude:
   - Makefile

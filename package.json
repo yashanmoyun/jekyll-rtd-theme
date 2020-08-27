@@ -1,5 +1,6 @@
 {
     "devDependencies": {
+        "@primer/css": "^15.1.0",
         "anchor-js": "^4.2.2",
         "html5shiv": "^3.7.3",
         "jquery": "^3.5.1",

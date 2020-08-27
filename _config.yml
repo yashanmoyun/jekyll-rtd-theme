@@ -14,6 +14,9 @@ addons:
   - plugins
   - analytics
 
+debug:
+  compress: false
+
 copyright:
   revision: true
 

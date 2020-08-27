@@ -5,6 +5,12 @@
         "html5shiv": "^3.7.3",
         "jquery": "^3.5.1",
         "jquery.toc": "^0.4.0",
-        "mermaid": "^8.7.0"
+        "mermaid": "^8.7.0",
+        "bourbon": "~4.3",
+        "bourbon-neat": "~1.9",
+        "font-awesome": "^4.7.0",
+        "lato-font": "^3.0.0",
+        "roboto-fontface": "^0.10.0",
+        "wyrm": "^1.0.9"
     }
 }

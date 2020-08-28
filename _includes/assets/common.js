@@ -10,6 +10,9 @@ $(document).ready(function() {
             link.closest("li.toctree-l3").addClass("current");
             link.closest("li.toctree-l4").addClass("current");
             link.closest("li.toctree-l5").addClass("current");
+            /* need debug */
+            $(".wy-menu-vertical a").children("span").html(`<i class="far fa-plus-square"></i>`)
+            $(".wy-menu-vertical a.current").children("span").html(`<i class="far fa-minus-square"></i>`);
         }
     }
 
@@ -105,7 +108,7 @@ $(document).ready(function() {
     /* nested ul */
     $(".wy-menu-vertical ul").siblings("a").each(function() {
         let link = $(this);
-        let expand = $('<span class="toctree-expand"></span>');
+        let expand = $('<span class="toctree-expand"><i class="far fa-plus-square"></i></span>');
 
         expand.on("click", function(e) {
             e.stopPropagation();
@@ -117,7 +120,7 @@ $(document).ready(function() {
 
     /* admonition */
     $(".admonition-title").each(function() {
-        $(this).html(ui.admonition[$(this).attr("ui")]);
+        $(this).children(".progress").replaceWith(ui.admonition[$(this).attr("ui")]);
     });
 
     /* bind */

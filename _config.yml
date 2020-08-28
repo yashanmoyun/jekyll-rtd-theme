@@ -24,10 +24,9 @@ readme_index:
   with_frontmatter: true
 
 sass:
-  style: compressed
+  # style: compressed
   load_paths:
     - node_modules
-    - node_modules/bourbon-neat/app/assets/stylesheets
 
 plugins:
   - jemoji

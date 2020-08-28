@@ -1,7 +1,7 @@
 <div role="navigation" aria-label="breadcrumbs navigation">
     <ul class="wy-breadcrumbs">
         <li>
-            <a href="{{ site.baseurl }}/" class="icon icon-home"></a><i class="fa fa-angle-double-right"></i>
+            <a href="{{ site.baseurl }}/"><i class="fas fa-home"></i></i></a><i class="fas fa-angle-double-right"></i>
         </li>
         {%- case page.url -%}
             {%- when "/search.html" %}
@@ -28,7 +28,7 @@
                                 {%- else -%}
                                     {{ block | capitalize }}
                                 {%- endif -%}
-                            </a><i class="fa fa-angle-double-right"></i>
+                            </a><i class="fas fa-angle-double-right"></i>
                         </li>
                     {%- endif -%}
                 {%- endfor -%}
